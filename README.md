@@ -1,5 +1,5 @@
 # Calculadora-Resistores
-Proyecto de Universidad de la materia Electrónica.
+Calculadora que pasa de bandas de color a valor y viceversa.
 
 -> El fin de este proyecto es hacer una calculadora que sea capaz 
    de pasar las bandas de un resistor a su valor en Ohmios y
