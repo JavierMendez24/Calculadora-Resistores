@@ -1,0 +1,180 @@
+/* PARAMETROS DE DISEÑO DE LAS BANDAS DEL RESISTOR */
+
+.a1{
+    margin-top: 35px;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 24px;
+    background-color: #e1c699;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 15px 0 0 15px;
+}
+.ai{
+    margin-top: 78px;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    background-color: gray;
+}
+.ai1{
+    margin-left: 21px;
+    margin-top: 78px;
+    display: block;
+    float: left;
+    height: 60px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 10px 0px 0px 0px;
+}
+.ad{
+    margin-left: 0px;
+    margin-top: 78px;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    background-color: gray;
+}
+.ad1{
+    margin-left: 0px;
+    margin-top: 78px;
+    display: block;
+    float: left;
+    height: 60px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.a2{
+    margin-top: 35px;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 24px;
+    background-color: blue;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.a3{
+    margin-top: 35px;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 24px;
+    background-color: #e1c699;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0px 20px 20px 0px;
+}
+.a4{
+    margin-top: 50px;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 24px;
+    background-color: #e1c699;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.a5{
+    margin-top: 50px;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 24px;
+    background-color: cyan;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.a6{
+    margin-top: 50px;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 24px;
+    background-color: #e1c699;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.a7{
+    margin-top: 50px;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 24px;
+    background-color: brown;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.a8{
+    margin-top: 50px;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 24px;
+    background-color: #e1c699;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.a9{
+    margin-top: 50px;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 24px;
+    background-color: purple;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.a10{
+    margin-top: 50px;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 24px;
+    background-color: #e1c699;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.a11{
+    margin-top: 35px;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 24px;
+    background-color: #e1c699;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 20px 0px 0px 20px;    
+}
+.a12{
+    margin-top: 35px;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 24px;
+    background-color: orangered;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.a13{
+    margin-top: 35px;
+    display: block;
+    float: left;
+    height: 100px;
+    width: 24px;
+    background-color: #e1c699;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 0px 15px 15px 0px;
+}
+.a1, .a2, .a3, .a4, .a5, .a6, .a7,
+.a8, .a9, .a10, .a11, .a12, .a13{
+    background-color: #e1c699;
+}
