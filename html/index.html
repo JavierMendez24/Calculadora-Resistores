@@ -24,7 +24,7 @@
                 <input type="button" id="v3b" value="&#9830; 3 Bandas &#9830;" onclick="ventana3bandas(); limpiarVentana()">
                 <input type="button" id="v4b" value="&#9830; 4 Bandas &#9830;" onclick="ventana4bandas(); limpiarVentana()">
                 <input type="button" id="v5b" value="&#9830; 5 Bandas &#9830;" onclick="ventana5bandas(); limpiarVentana()">
-                <input type="button" id="viv" value="&#9830; Ingresar Valor &#9830;" onclick="ventanaintrovalor();">
+                <input type="button" id="viv" value="&#9830; Ingresar Valor &#9830;" onclick="ventanaintrovalor(); limpiarIngresarValor()">
             </div>
         </nav>
         <main>
@@ -103,7 +103,7 @@
                                 <input type="button" value="CALCULAR" onclick="calcular3bandas()" class="submit0" />
                                 <input type="button" value="LIMPIAR" onclick="limpiar3bandas()" class="submit1" />
                             </div>
-                         </div>
+                        </div>
                     </div>
                     <div class="left">
                         <div class="box4">
@@ -400,8 +400,83 @@
             </form>
             </div>
         <div id="ventanaiv" onclick="ventanaintrovalor">
-        <div class="band">
-            <br>Fase en Desarrollo
+            <form name="ingresarValor" action="../html/index.html" method="POST">
+        <div class="arr">
+            <div class="selectiv">Ingrese el valor del resistor <br>
+                <input type="text" name="caja" value="" class="value" />
+            </div>
+            <div class="selectuni">Unidades a convertir <br>
+                <select name="uni" class="selectband" onchange="">
+                    <option value="-1" selected class="sele">Seleccione una opcion</option>
+                    <option value="o" class="">Ohmios (Ω)</option>
+                    <option value="k" class="">Kiloohmios (kΩ)</option>
+                    <option value="m" class="">Megaohmios (MΩ)</option>
+                    <option value="g" class="">Gigaohmios (GΩ)</option>
+                </select>
+            </div>
+            <div class="selectba">Número de bandas: <br>
+                <select name="nbandas" class="selectband" onchange="mostrarBandas(this);">
+                    <option value="-1" selected class="sele">Seleccione una opcion</option>
+                    <option value="3bandas" class="">3 Bandas</option>
+                    <option value="4bandas" class="">4 Bandas</option>
+                    <option value="5bandas" class="">5 Bandas</option>
+                </select>
+            </div>
+            <div class="selectto">Seleccione la tolerancia <br>
+                <select id="switchBandas" disabled name="tol" class="selextolerancia" onchange="cambiarSelectTol()">
+                    <option value="-1" selected class="sele">Seleccione un color</option>
+                    <option value="± 1%" class="marron">Marron ± 1%</option>
+                    <option value="± 2%" class="rojo">Rojo ± 2%</option>
+                    <option value="± 0.5%" class="verde">Verde ± 0.5%</option>
+                    <option value="± 0.25%" class="azul">Azul ± 0.25%</option>
+                    <option value="± 0.1%" class="violeta">Violeta ± 0.1%</option>
+                    <option value="± 0.05%" class="gris">Gris ± 0.05%</option>
+                    <option value="± 5%" class="dorado">Dorado ± 5% </option>
+                    <option value="± 10%" class="plata">Plata ± 10%</option>
+                </select>
+            </div>
+        </div>
+        <div class="aba"><center>
+            <div class="li">
+                <input type="button" value="CALCULAR" onclick=" mostrarResultado(); valorBandas(); cambiarColorTol()" class="submit0" />
+                <input type="button" value="LIMPIAR" onclick="limpiarIngresarValor()" class="submit1" />
+            </div>
+            <div class="cuadro">
+                <!-- IMAGEN DE RESISTOR-->
+                <div class="ai1" ></div>
+                <div class="ai" ></div>
+                <div class="a1" ></div>
+                <div class="a2" id="body"></div>
+                <div class="a3"></div>
+                <div class="a4"></div>
+                <div class="a5" id="body1"></div>
+                <div class="a6"></div>
+                <div class="a7" id="body2"></div>
+                <div class="a8"></div>
+                <div class="a9" id="body3"></div>
+                <div class="a10"></div>
+                <div class="a11"></div>
+                <div class="a12" id="body4"></div>
+                <div class="a13"></div>
+                <div class="ad"></div>
+                <div class="ad1"></div>
+            </div>
+            <div class="li">
+                <!-- MOSTRANDO VALOR DEL RESISTOR -->
+                <input type="text" id="id_resultado" disabled name="caja_resultado" value="" class="result" />
+            </div>
+            <div class="par">
+                <p> 
+                    <h2>RESISTOR</h2>
+                    Se denomina resistencia o resistor al componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico. En otros casos, como en las planchas, calentadores, etc., se emplean resistencias para producir calor aprovechando el efecto Joule. Es un material formado por carbón y otros elementos resistivos para disminuir la corriente que pasa. Se opone al paso de la corriente.
+                    <br><br>
+                    La corriente máxima y diferencia de potencial máxima en una resistencia viene condicionada por la máxima potencia que pueda disipar su cuerpo. Esta potencia se puede identificar visualmente a partir del diámetro sin que sea necesaria otra indicación. Los valores más comunes son 0.25 W, 0.5 W y 1 W.
+                    <br><br>
+                    Los resistores se utilizan en los circuitos para limitar el valor de la corriente o para fijar el valor de la tensión, según la Ley de Ohm. A diferencia de otros componentes electrónicos, los resistores no tienen polaridad definida.
+                </p>
+            </div>
+        </center>
+    </form>
         </div>
     </div>
 </div>
